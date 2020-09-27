@@ -1,0 +1,33 @@
+<h1>Calendar</h1>
+<div class="container">
+      <div class="calendar">
+        <div class="front">
+          <div class="current-date">
+            <h1>Friday 15th</h1>
+            <h1>January 2016</h1>	
+          </div>
+
+          <div class="current-month">
+            <ul class="week-days">
+              <li>MON</li>
+              <li>TUE</li>
+              <li>WED</li>
+              <li>THU</li>
+              <li>FRI</li>
+              <li>SAT</li>
+              <li>SUN</li>
+            </ul>
+
+            <ul class="weeks">  
+              <li>
+                {{#each timeSheet}}
+                <span>{{this.id}}</span>
+                <small class="sheet-event">{{this.event}}</small>
+                {{/each}}
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
